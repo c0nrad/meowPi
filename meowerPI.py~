@@ -1,0 +1,13 @@
+#!/usr/bin/python2.7
+
+import pygame.mixer
+from time import sleep
+from sys import exit
+
+pygame.mixer.init(44000, -16, 1, 1024)
+
+soundA = pygame.mixer.Sound("angry2.wav")
+
+soundChannelA = pygame.mixer.Channel(1)
+
+soundChannel1A.play(soundA)
