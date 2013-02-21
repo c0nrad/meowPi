@@ -10,26 +10,31 @@ def getSoundFiles():
 
 if __name__ == "__main__":
 
-    print("[+] Initializing pygame mixer");
+    print "[+] Initializing pygame mixer";
     pygame.mixer.init(44000, -16, 1, 1024)
     
-    print("[+] Initalizing sounds from \"sound/\" folder")
+    print "[+] Initalizing sounds from \"sound/\" folder"
     sounds = []
     for f in getSoundFiles():
         sounds.append(pygame.mixer.Sound("sounds/" + f))
                      
-    soundChannel = pygame.mixer.Channel(1)
+    soundChannels = []
+    soundChannels.append(pygame.mixer.Channel(1))
+    soundChannels.append(pygame.mixer.Channel(2))
+    soundChannels.append(pygame.mixer.Channel(3))
 
     soundCounter = 0
+    channelCounter = 0
     while 1:
-        print("[+] Playing sound " + str(soundCounter))
-        soundChannel.play(sounds[soundCounter])
+        print "[+] Playing sound " + str(soundCounter)
+        soundChannels[channelCounter].play(sounds[soundCounter])
         sleep(5)
 
         soundCounter += 1
-        if soundCounter >= len(sounds):
-            soundCounter = 0
+        soundCounter %= len(sounds)
 
+        channelCounter += 1
+        channelCounter %= len(soundChannels)
 
 
 
