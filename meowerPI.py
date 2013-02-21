@@ -1,41 +1,29 @@
 #!/usr/bin/python2.7
 
-import pygame.mixer
 from time import sleep
 from sys import exit
-from os import listdir
+from meow import Meow
+from sonar import Sonar
+from debug import *
 
 def getSoundFiles():
     return listdir("sounds/")
 
 if __name__ == "__main__":
 
-    print "[+] Initializing pygame mixer";
-    pygame.mixer.init(44000, -16, 1, 1024)
-    
-    print "[+] Initalizing sounds from \"sound/\" folder"
-    sounds = []
-    for f in getSoundFiles():
-        sounds.append(pygame.mixer.Sound("sounds/" + f))
-                     
-    soundChannels = []
-    soundChannels.append(pygame.mixer.Channel(1))
-    soundChannels.append(pygame.mixer.Channel(2))
-    soundChannels.append(pygame.mixer.Channel(3))
 
-    soundCounter = 0
-    channelCounter = 0
+    meow = Meow()
+    sonar = Sonar()
+
     while 1:
-        print "[+] Playing sound " + str(soundCounter)
-        soundChannels[channelCounter].play(sounds[soundCounter])
-        sleep(5)
+        sleep(.1)
+        
+        distance = sonar.readValue()
+        infoMessage("distance: ", distance)
 
-        soundCounter += 1
-        soundCounter %= len(sounds)
-
-        channelCounter += 1
-        channelCounter %= len(soundChannels)
-
+        if distance < 100:
+            meow.playNextSound()
+            sleep(3)
 
 
 

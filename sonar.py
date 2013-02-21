@@ -52,3 +52,4 @@ class Sonar:
 
   def cleanup(self):
     GPIO.cleanup()
+
