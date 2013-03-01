@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import time
 import RPi.GPIO as GPIO
+from debug import *
 
 GPIO_TRIGGER = 23
 GPIO_ECHO = 24
@@ -8,6 +9,7 @@ GPIO_ECHO = 24
 class Sonar:
   def __init__(self, trigPin = GPIO_TRIGGER, echoPin = GPIO_ECHO):
 
+    goodMessage("starting sonar with Trigger Pin: ", trigPin, " and Echo Pin: ", echoPin)
     GPIO.setmode(GPIO.BCM)
     self.mTriggerPin = trigPin
     self.mEchoPin = echoPin

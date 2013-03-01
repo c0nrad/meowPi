@@ -1,5 +1,4 @@
 #!/usr/bin/python2.7
-
 import pygame.mixer
 from time import sleep
 from sys import exit

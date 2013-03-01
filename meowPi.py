@@ -10,8 +10,6 @@ def getSoundFiles():
     return listdir("sounds/")
 
 if __name__ == "__main__":
-
-
     meow = Meow()
     sonar = Sonar()
 
@@ -19,7 +17,7 @@ if __name__ == "__main__":
         sleep(.1)
         
         distance = sonar.readValue()
-        infoMessage("distance: ", distance)
+        infoMessage("[+] distance: ", distance)
 
         if distance < 100:
             meow.playNextSound()
