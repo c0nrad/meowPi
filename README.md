@@ -19,7 +19,7 @@ In this tutorial you'll be building a ultrasonic based tripwire for your Raspber
 	  
 Sonar works by emitting a pulse of sound, and timing how long it takes for that sound to to bounce back to a reciever. Since we know how fast sound travels (~340m/s) and we can figure out how long the sound took to get there and come back, we can calculate the distance of the object. 
 
-![Sonar](https://github.com/c0nrad/meowPi/blob/master/sonarDiagram.png)
+![Sonar](https://github.com/c0nrad/meowPi/blob/master/sonarDiagram.png?raw=true)
 
 To play sounds we'll be using the <i>pygame.mixer</i> library. This library should already be installed on your RPi assuming you're using wheezy. 
 
@@ -37,7 +37,7 @@ Hardware Setup
 -
 
 First up we'll be wiring the sonar to the RPi as follows : 
-![Wiring]("https://github.com/c0nrad/meowPi/blob/master/ultraSonicWiring.png")  
+![Wiring](https://github.com/c0nrad/meowPi/blob/master/ultraSonicWiring.png?raw=true)  
 	   
 Software 
 -	  
