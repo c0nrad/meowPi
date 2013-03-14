@@ -41,12 +41,13 @@ First up we'll be wiring the sonar to the RPi as follows :
 	   
 Software 
 -	  
-	  The software is split into 4 main files:
 
-[meowPi.py](https://github.com/c0nrad/meowPi/blob/master/meowPi.py): Top level file. Checks for difference in sonar distance. Emits a meow if within certain range.
-[meow.py](https://github.com/c0nrad/meowPi/blob/master/meow.py): Driver for playing meow sounds.
-[sonar.py](https://github.com/c0nrad/meowPi/blob/master/sonar.py): Driver for sonar.
-[debug.py](https://github.com/c0nrad/meowPi/blob/master/debug.py): Simple debug output
+The software is split into 4 main files:
+
+* [meowPi.py](https://github.com/c0nrad/meowPi/blob/master/meowPi.py): Top level file. Checks for difference in sonar distance. Emits a meow if within certain range.
+* [meow.py](https://github.com/c0nrad/meowPi/blob/master/meow.py): Driver for playing meow sounds.
+* [sonar.py](https://github.com/c0nrad/meowPi/blob/master/sonar.py): Driver for sonar.
+* [debug.py](https://github.com/c0nrad/meowPi/blob/master/debug.py): Simple debug output
 	  
 To run the code, simply run the command in terminal:
 
