@@ -43,20 +43,16 @@ Software
 -	  
 	  The software is split into 4 main files:
 
-	  <dl>
-	    <dt> meowPi.py  </dt>
-	    <dd> Top level file. Checks for difference in sonar distance, and emits a meow if within certain range. </dd>
-	    <dt> meow.py </dt>
-	    <dd> Script to play the meow sounds. </dd>
-	    <dt> sonar.py </dt>
-	    <dd> Driver for determining sonar distance </dd>
-	    <dt> debug.py </dt>
-	    <dd> Simple debug functions </dd>
-	  </dl> 
+[meowPi.py](https://github.com/c0nrad/meowPi/blob/master/meowPi.py): Top level file. Checks for difference in sonar distance. Emits a meow if within certain range.
+[meow.py](https://github.com/c0nrad/meowPi/blob/master/meow.py): Driver for playing meow sounds.
+[sonar.py](https://github.com/c0nrad/meowPi/blob/master/sonar.py): Driver for sonar.
+[debug.py](https://github.com/c0nrad/meowPi/blob/master/debug.py): Simple debug output
 	  
-	  To run the code, simply run the command in terminal:
-	  python2.7 meowPi.py
-	  
-	  And when an object is within a certain distance of the sonar, a meow is played.
+To run the code, simply run the command in terminal:
 
+'''bash
+python2.7 meowPi.py
+'''	  
+And when an object is within a certain distance of the sonar, a meow is played.
 
+Enjoy!	  
