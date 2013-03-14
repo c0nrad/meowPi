@@ -23,20 +23,19 @@ To play sounds we'll be using the <i>pygame.mixer</i> library. This library shou
 
 Parts 
 -	  
-	   For this tutorial you'll need a few parts: 
-	    * [Raspberry Pi]("http://www.amazon.com/Raspberry-Pi-Model-Revision-512MB/dp/B009SQQF9C/ref=sr_1_1?ie=UTF8&qid=1362138473&sr=8-1&keywords=raspberry+pi")
-	    * [Cobbler Breakout Kit]("http://www.adafruit.com/products/914")
-	    * [Breadboard]("http://www.amazon.com/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO/ref=pd_sim_e_3")
-	    * [Breadboard]("http://www.amazon.com/Ultrasonic-Module-HC-SR04-Distance-Arduino/dp/B004U8TOE6/ref=sr_1_1?ie=UTF8&qid=1362137669&sr=8-1&keywords=hc-sr04")
-	    * [330 and 470 Ohm Resistors](http://www.amazon.com/Sparkfun-500-4W-Resistor-Kit/dp/B008MH97I4/ref=sr_1_1?s=electronics&ie=UTF8&qid=1362138498&sr=1-1&keywords=resistors")
-	    * [Speakers with 3.5mm jack]("http://www.amazon.com/Logitech-S120-2-0-Multimedia-Speakers/dp/B000R9AAJA/ref=sr_1_2?s=electronics&ie=UTF8&qid=1362138535&sr=1-2&keywords=speakers")
+
+* [Raspberry Pi]("http://www.amazon.com/Raspberry-Pi-Model-Revision-512MB/dp/B009SQQF9C/ref=sr_1_1?ie=UTF8&qid=1362138473&sr=8-1&keywords=raspberry+pi")
+* [Cobbler Breakout Kit]("http://www.adafruit.com/products/914")
+* [Breadboard]("http://www.amazon.com/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO/ref=pd_sim_e_3")
+* [Breadboard]("http://www.amazon.com/Ultrasonic-Module-HC-SR04-Distance-Arduino/dp/B004U8TOE6/ref=sr_1_1?ie=UTF8&qid=1362137669&sr=8-1&keywords=hc-sr04")
+* [330 and 470 Ohm Resistors](http://www.amazon.com/Sparkfun-500-4W-Resistor-Kit/dp/B008MH97I4/ref=sr_1_1?s=electronics&ie=UTF8&qid=1362138498&sr=1-1&keywords=resistors")
+* [Speakers with 3.5mm jack]("http://www.amazon.com/Logitech-S120-2-0-Multimedia-Speakers/dp/B000R9AAJA/ref=sr_1_2?s=electronics&ie=UTF8&qid=1362138535&sr=1-2&keywords=speakers")
 
 Hardware Setup 
 -
 
-	  First up we'll be wiring the sonar to the RPi as follows : 
-	  <image width="400px" height="300px" src="../assets/img/ultraSonicWiring.png" alt="Snake Game Screenshot"/>
-	  
+First up we'll be wiring the sonar to the RPi as follows : 
+![Wiring]("../assets/img/ultraSonicWiring.png")  
 	   
 Software 
 -	  
