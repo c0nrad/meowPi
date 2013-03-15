@@ -14,15 +14,15 @@ class Sonar:
     self.mTriggerPin = trigPin
     self.mEchoPin = echoPin
 
-    GPIO.setup(GPIO_TRIGGER,GPIO.OUT)  # Trigger
-    GPIO.setup(GPIO_ECHO,GPIO.IN)      # Echo
+    GPIO.setup(self.mTriggerPin,GPIO.OUT)  # Trigger
+    GPIO.setup(self.mEchoPin,GPIO.IN)      # Echo
 
-    GPIO.output(GPIO_TRIGGER, False)
+    GPIO.output(self.mTriggerPin, False)
 
   def readContinuous(self):
     
     while True:
-      time.sleep(0.1)
+      time.sleep(1)
       value = self.readValue()
       print value
 
@@ -55,3 +55,7 @@ class Sonar:
   def cleanup(self):
     GPIO.cleanup()
 
+
+if __name__ == "__main__":
+  s = Sonar()
+  s.readContinuous()

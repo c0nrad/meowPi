@@ -6,13 +6,10 @@ from meow import Meow
 from sonar import Sonar
 from debug import *
 
-def getSoundFiles():
-    return listdir("sounds/")
-
 if __name__ == "__main__":
     meow = Meow()
     sonar = Sonar()
-
+    
     while 1:
         sleep(.1)
         
@@ -22,6 +19,8 @@ if __name__ == "__main__":
         if distance < 100:
             meow.playNextSound()
             sleep(3)
+                
+
 
 
 
