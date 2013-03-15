@@ -42,7 +42,8 @@ Hardware Setup
 
 First up we'll be wiring the sonar to the RPi as follows : 
 ![Wiring](https://github.com/c0nrad/meowPi/blob/master/images/ultraSonicWiring.png?raw=true)  
-	   
+<i> Image courtesy of Matt Hawkins </i>	   
+
 Software 
 -	  
 
