@@ -12,7 +12,7 @@ Introduction
 
 Every person has a responsibility to himself and the world. As Gandhi once said: <i> "Whatever you do will be insignificant, but it is very important that you do it." </i> 
 
-Unfortunetly Gandhi wasen't alive to see the creation of RPi meowers, but if he were alive today, I'm sure he'd change his quote to reflect the importantace of these devices.
+Unfortunetly Gandhi wasen't alive to see the creation of RPi meowers, but if he were alive today, I'm sure he'd change his quote to reflect the importance of these devices.
 
 Anyways, let's get started. 
 
